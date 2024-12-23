@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo Application</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>ToDo Application</h1>
+        Title:
+        <input type="text" name="title" id="title" />
+        Description:
+        <textarea name="description" id="description"></textarea>
+        <button id="saveButton" onclick="onPress()">Save ToDo</button>
+        <button onclick="fetchTodo()">Fetch All Todos</button>
+
+        <h2>All Todos</h2>
+        <div id="todo-list"></div>
+
+        <!-- Modal for Updating Todo -->
+        <div id="updateModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Update ToDo</h2>
+                Title:
+                <input type="text" name="update-title" id="update-title" /><br /><br />
+                Description:
+                <input type="text" name="update-description" id="update-description" /><br /><br />
+                <button onclick="updateTodoAction()">Update ToDo</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
