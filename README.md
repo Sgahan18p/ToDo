@@ -133,7 +133,7 @@ This project is licensed under the **MIT License**.
 ## 📧 **Contact**
 
 - **Author:** Your Name  
-- **GitHub:** [Your GitHub Profile](https://github.com/sgahan18p)  
+- **GitHub:** [Shubhankar Gahan](https://github.com/sgahan18p)  
 - **Email:** sgahan18p@gmail.com
 
 ---
