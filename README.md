@@ -1,7 +1,7 @@
 
 📋 ToDo Application
 
-A simple and responsive **ToDo Application** built using **HTML**, **CSS**, and **JavaScript**. This application allows users to add, update, and manage their tasks efficiently.
+A simple and responsive **ToDo Application** built using **HTML**, **CSS**, and **JavaScript** ,**Node** , **Express**. This application allows users to add, update, and manage their tasks efficiently.
 
 ---
 
