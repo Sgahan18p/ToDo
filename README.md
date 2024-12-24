@@ -105,6 +105,15 @@ A simple and responsive **ToDo Application** built using **HTML**, **CSS**, and 
 
 ---
 
+## 📊 **Code Flow Diagrams**
+
+- **App.js Code Flow:**  
+  ![App.js Code Flow](./images/app.png)
+
+- **Server.js Code Flow:**  
+  ![Server.js Code Flow](./images/server.png)
+
+
 ## 🤝 **Contributing**
 
 Contributions are welcome!  
