@@ -44,7 +44,7 @@ function fetchTodo() {
           throw new Error("Failed to delete ToDo");
         }
         alert("ToDo deleted successfully!");
-        fetchTodo(); // Refresh the todo list after deletion
+        fetchTodo(); 
       })
       .catch((error) => {
         console.error("Error:", error);
@@ -54,29 +54,25 @@ function fetchTodo() {
 
   // Open Modal for Updating Todo
   function openUpdateModal(id, currentTitle, currentDescription) {
-    // Pre-fill the input fields with current values
     document.getElementById("update-title").value = currentTitle;
     document.getElementById("update-description").value = currentDescription;
     
-    // Store the current ID temporarily in a data attribute for easy access
     const modal = document.getElementById("updateModal");
     modal.dataset.todoId = id;
 
-    // Display the modal
     modal.style.display = "block";
   }
 
-  // Close the Modal
+
   function closeModal() {
     document.getElementById("updateModal").style.display = "none";
   }
 
-  // Handle Update Action
   function updateTodoAction() {
     const title = document.getElementById("update-title").value.trim();
     const description = document.getElementById("update-description").value.trim();
     
-    // Get the ToDo ID from the modal's data attribute
+
     const modal = document.getElementById("updateModal");
     const todoId = modal.dataset.todoId;
 
@@ -104,8 +100,8 @@ function fetchTodo() {
       .then((data) => {
         console.log("Todo Updated:", data);
         alert("Todo Updated Successfully!");
-        fetchTodo(); // Refresh the list
-        closeModal(); // Close the modal
+        fetchTodo(); 
+        closeModal(); 
       })
       .catch((error) => {
         console.error("Error:", error);
@@ -113,7 +109,7 @@ function fetchTodo() {
       });
   }
 
-  // Handle Save or Add New Todo
+
   function onPress() {
     const title = document.getElementById("title").value.trim();
     const description = document.getElementById("description").value.trim();
@@ -142,7 +138,7 @@ function fetchTodo() {
       .then((data) => {
         console.log("Todo Saved:", data);
         alert("Todo Saved Successfully!");
-        fetchTodo(); // Refresh the list
+        fetchTodo(); 
       })
       .catch((error) => {
         console.error("Error:", error);

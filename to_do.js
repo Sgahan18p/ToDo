@@ -31,9 +31,6 @@
     }
 }
 
-
-  
-  
   function saveTodos() {
     fs.writeFileSync(filepath, JSON.stringify(todo, null, 2), "utf-8");  
   }
